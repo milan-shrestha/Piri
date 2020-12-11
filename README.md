@@ -29,11 +29,3 @@ Piri's mission is to help people make informed decision for their new place. The
 7. Bootstrap
 8. HTML
 9. CSS
-
-### What I'll Have to Learn
-
-Public API integration to retrieve details about cities.
-
-### Project Tracker
-
-[Trello Board](https://trello.com/b/rdzXKTzs/liftoff-capstone-project)
