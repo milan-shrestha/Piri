@@ -1,15 +1,39 @@
 package org.launchcode.Piri.models;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import javax.persistence.Entity;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
 import java.util.Objects;
 
-public class City {
+@Entity
+public class City extends AbstractEntity{
 
-    private int zipcode; //id?
-    private int latitude;
-    private int longitude;
     private String cityName;
     private String state;
     private String county;
+    private int zipcode; //id?
+    private int latitude;
+    private int longitude;
+
+
+    // Empty constructor - do we need this?
+    public City() {
+    }
+
+    // Initialize value fields
+    public City(String aName, String aState, String aCounty, int aZipcode, int aLatitude, int aLongitude) {
+        this();
+        this.cityName = aName;
+        this.state = aState;
+        this.county = aCounty;
+        this.zipcode = aZipcode;
+        this.latitude = aLatitude;
+        this.longitude = aLongitude;
+    }
 
     public int getZipcode() {
         return zipcode;
